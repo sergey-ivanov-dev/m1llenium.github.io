@@ -257,22 +257,21 @@ header {
 	}
 	.content {
 		width: 100%;
-		min-height: 680px;
-		height: auto;
+		height: 1850px;
 		background: #f8f8f8 url(img/back.png) repeat-x;
-		z-index: 1;
+		z-index: 11;
 		position: relative;
-		overflow: hidden;
 	}
 		.usercontent {
 			width: 960px;
 			min-height: 1550px;
 			height: auto;
 			margin: 0px auto;
-			margin-top: 380px;
+			padding-top: 380px;
 			background-color: white;
 			position: relative;
-			box-shadow: 0px 1px 4px #e6e6e6;
+			box-shadow: 0px 1px 4px #6e6d6d;
+			z-index: 8;
 		}
 			.rightside {
 				border-left:solid 1px #efefef;
@@ -296,6 +295,22 @@ header {
 					margin-top: 30px;
 					float: left;
 				}
+					.colimg {
+						display: block;
+						float: right;
+						height: 14px;
+						width: 157px;
+						margin-left: 15px;
+					}
+					.imgpost {
+						outline: solid 1px #a3a3a3;
+						height: 144px;
+						width: 269px;
+						margin-top: 15px;
+						box-shadow: 0px 0px 2px 2px #d7d7d7;
+						border:solid 3px white;
+						background-color: #666666;
+					}
 				.row {
 					width: 580px;
 					height: 450px;
@@ -304,6 +319,13 @@ header {
 					outline: dashed 1px red;
 					float: left;
 				}
+					.rowimg {
+						display: block;
+						float: right;
+						height: 14px;
+						width: 490px;
+						margin-left: 15px;
+					}
 				.hatch {
 					display: block;
 					float:left;
@@ -312,3 +334,126 @@ header {
 					width: 900px;
 					margin-top: 50px;
 				}
+				.back {
+					position: absolute;
+					text-decoration: none;
+					top: 1500px;
+					width: 100px;
+					left: 830px;
+					font:italic 9pt georgia;
+					color: #787878;
+				}
+					.leftside a span {
+						-webkit-transform: rotate(90deg);
+						display: inline-block;
+						font-size:11pt;
+						font-style: bold;
+						padding-top: 2px;
+						padding-left: 4px;
+					}
+	.search {
+		width: 250px;
+		height: 25px;
+		margin-left: 30px;
+		margin-top: 10px;
+		padding-left: 10px;
+	}
+	.search:focus {
+		outline: none;
+	}
+	.contentbaner {
+		width: 265px;
+		height: 250px;
+		margin-left: 30px;
+		margin-top: 30px;
+		outline: dashed 1px red;
+	}
+		.banerimg {
+			display: block;
+			float: right;
+			height: 14px;
+			width: 157px;
+			margin-left: 15px;	
+		}
+	.sponsorsbaner {
+		width: 265px;
+		height: 162px;
+		margin-left: 30px;
+		margin-top: 30px;
+		outline: dashed 1px red;
+	}
+		.condivname {
+			display: inline;
+			font: italic 10pt georgia;
+			color: #444444;
+			text-shadow:0px 0px 4px #dfdfdf;
+		}
+			.sponimg {
+				display: block;
+				float: right;
+				height: 12px;
+				width: 190px;
+				margin-left: 15px;
+			}
+			.sponsor {
+				height:125px;
+				width:125px;
+				float: left;
+				border:solid 3px #fafafa;
+				margin-top: 15px;
+			}
+				.sponsor:last-child {
+					float: right;
+				}
+	.video {
+		width: 265px;
+		height: 200px;
+		margin-left: 30px;
+		margin-top: 30px;
+		outline: dashed 1px red;
+	}	
+		.videoimg{
+				display: block;
+				float: right;
+				height: 14px;
+				width: 150px;
+				margin-left: 15px;
+		}
+	.twitter {
+		width: 265px;
+		height: 257px;
+		margin-left: 30px;
+		margin-top: 30px;
+		outline: dashed 1px red;
+	}
+		.twitterimg {
+			display: block;
+			float: right;
+			height: 14px;
+			width: 200px;
+			margin-left: 15px;
+		}
+	.posts {
+		width: 265px;
+		height: 257px;
+		margin-left: 30px;
+		margin-top: 30px;
+		outline: dashed 1px red;
+	}
+		.postimg{
+			display: block;
+			float: right;
+			height: 14px;
+			width: 165px;
+			margin-left: 15px;
+		}
+.about {
+	width: 100%;
+	height: 350px;
+	z-index: 800;
+	background-color: #2b2b2b;
+}
+footer{
+	height: 50px;
+	width: 100%;
+}
