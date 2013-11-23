@@ -301,6 +301,7 @@ header {
 		background: #f8f8f8 url(img/back.png) repeat-x;
 		z-index: 11;
 		position: relative;
+		font-family: 'Open Sans', sans-serif;
 	}
 		.usercontent {
 			width: 960px;
@@ -326,6 +327,8 @@ header {
 				margin-top:15px;
 				background-color: #542f39;
 				border:solid 3px #c7c7c7;
+				background: url(http://cdn.macrumors.com/article-new/2013/10/Iphone5sad1.jpg) 100% 100% no-repeat;
+				background-size: cover;
 			}
 			.leftside {
 				width: 640px;
@@ -357,6 +360,10 @@ header {
 						box-shadow: 0px 0px 2px 2px #d7d7d7;
 						border:solid 3px white;
 						background-color: #666666;
+					}
+					.imgpost img {
+						height: inherit;
+						width: inherit;
 					}
 					.imgtext{
 						font-size:  10pt;
@@ -400,7 +407,7 @@ header {
 							margin-bottom: 15px;
 							box-shadow: 0px 0px 2px 2px #d7d7d7;
 							border:solid 1px white;
-							background-color: #666666;
+							background: url(http://cs416723.vk.me/v416723465/824c/arPVLwa7QcI.jpg);
 						}
 						.textcomment {
 							padding-top: 10px;
@@ -427,7 +434,7 @@ header {
 						width: 490px;
 						margin-left: 15px;
 					}
-					.latestpostitem {;
+					.latestpostitem {
 						margin-bottom: 15px;
 						margin-top: 15px;
 						border-bottom: 1px solid #e7e7e7;
@@ -443,6 +450,10 @@ header {
 							display: inline-block;
 							background-color: #666666;
 						}
+							.imglatestpost img {
+								height: inherit;
+								width: inherit;
+							}
 							.latestposttext {
 								position: relative;
 								display: inline-block;
@@ -524,10 +535,14 @@ header {
 				float: left;
 				border:solid 3px #c7c7c7;
 				margin-top: 15px;
-				background-color: #542f39;
+				background-color: white;
 			}
 				.sponsor:last-child {
 					float: right;
+				}
+				.sponsor img {
+					height: inherit;
+					width: inherit;
 				}
 	.video {
 		width: 265px;
@@ -544,10 +559,8 @@ header {
 		}
 	.twitter {
 		width: 265px;
-		height: 257px;
 		margin-left: 30px;
 		margin-top: 30px;
-		outline: dashed 1px red;
 	}
 		.twitterimg {
 			display: block;
@@ -556,26 +569,163 @@ header {
 			width: 200px;
 			margin-left: 15px;
 		}
+		 .itemtwiter {
+		 	padding-top: 10px;
+		 	font-family: 'Open Sans', sans-serif;
+		 	font-size: 10pt;
+		 	color:#444444;
+		 	line-height: 1.5;
+		 	border-bottom:  1px solid #e7e7e7;
+		 }
+		 	.itemtwiter a{
+		 		color:#e47600;
+		 		text-decoration: none;
+		 	}
+		 	.itemtwiter a:hover{
+				color:#444444;
+		 	}
+		 	.itemtwiter span {
+				color:#aaaaaa;
+				font:italic 8pt georgia;
+		 	}
+		 	.itemtwiter span:hover {
+		 		color:#444444;
+				text-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+		 	}
 	.posts {
 		width: 265px;
-		height: 257px;
 		margin-left: 30px;
 		margin-top: 30px;
-		outline: dashed 1px red;
 	}
 		.postimg{
 			display: block;
 			float: right;
 			height: 14px;
-			width: 165px;
+			width: 150px;
 			margin-left: 15px;
 		}
+		.recentitem {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #e7e7e7;
+		}
+			.recentitem a{
+				text-decoration: none;
+				color:#444444;
+				font-size: 10pt;
+				text-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+			}
+			.recentitem a:hover{
+				color:#e47600;
+			}
 .about {
 	width: 100%;
-	height: 350px;
 	z-index: 800;
 	background-color: #2b2b2b;
+	font-family: 'Open Sans', sans-serif;
 }
+	.aboutcontent {
+		width: 960px;
+		position: relative;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+		.postsabout {
+			width: 265px;
+			margin-top: 70px;
+			float: left;
+		}
+			.postimg{
+				display: block;
+				float: right;
+				height: 14px;
+				width: 165px;
+				margin-left: 15px;
+			}
+			.condivnameabout {
+			display: inline;
+			font: italic 9pt georgia;
+			color: #bbbbbb;
+			text-shadow:0px 0px 1px #dfdfdf;
+		}
+			.recentitemabout {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				border-bottom: 1px solid #4a4a4a;
+			}
+				.recentitemabout a{
+					text-decoration: none;
+					color:#b2b2b2;
+					font-size: 9pt;
+					text-shadow:0px 0px 1px #dfdfdf;
+				}
+				.recentitemabout a:hover{
+					color:white;
+				}
+		.aboutviewport{
+			float: left;
+			margin-top: 70px;
+			margin-bottom: 70px;
+			width: 265px;
+			line-height: 1.5;
+			color: #999999;
+			font-size: 10pt;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+			.aboutviewport p{
+				padding-top: 15px;
+				text-shadow:0px 0px 1px rgba(186,186,186,0.5);
+			}
+		.commentsabout {
+			margin-top: 70px;
+			width: 200px;
+			float: left;
+			font-size: 10pt;
+			color: #777777;
+			text-shadow:0px 0px 1px rgba(186,186,186,0.5);
+		}
+			.commnetabout a {
+				text-decoration: none;
+				color:#ababab;
+			}
+				.commnetabout a:hover{
+					color:white;
+				}
+			.commnetabout {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				border-bottom: 1px solid #4a4a4a;
+			}
+			.aboutimg {
+				display: block;
+				float: right;
+				height: 12px;
+				width: 190px;
+				margin-left: 15px;
+			}
+	.aboutlogo {
+		float: right;
+		width: 170px;
+		margin-left: 20px;
+		margin-top: 70px;
+	}
+		.aboutlogo a {
+			font-family:'Noto Sans', sans-serif;
+			font-size: 22pt;
+			float: right;
+			text-decoration: none;
+			color: #f1eee5;
+		}
+		.aboutlogo p {
+			float: right;
+			text-align: right;
+			padding-top: 15px;
+			color: #999999;
+			font-size: 10pt;
+			text-shadow:0px 0px 1px rgba(186,186,186,0.5);
+			text-indent: 1.5em;
+		}
 footer{
 	width: 100%;
 	position: relative;
