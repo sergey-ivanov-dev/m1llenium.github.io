@@ -1,0 +1,51 @@
+@font-face {
+font-family: 'Glyphicons Halflings';
+src: url('..//fonts/glyphicons-halflings-regular.eot');
+src: url('..//fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype');
+src: url('..//fonts/glyphicons-halflings-regular.woff') format('woff');
+src: url('..//fonts/glyphicons-halflings-regular.ttf') format('truetype');
+src: url('..//dist/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+header {
+	width:100%;
+	background: url(img/line.png) repeat-x bottom, #76c7c0;
+}
+	.head {
+		padding-top:15px;
+		padding-bottom: 15px;
+	}
+	.container {
+		width: 960px;
+	}
+		.logo {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 12pt;
+			color:white;
+		}
+			.logo span {
+				font-size: 15pt;
+				font-weight: 800;
+			}
+	.menuheader {
+		font-size: 7pt;
+	}
+	.nav>li>a {
+		border-bottom: 3px solid transparent;
+	}
+	.nav>li>a:hover, .nav>li>a:focus{
+		background-color:#e8645a;
+		border-bottom: 3px #e2534b solid;
+	}
+	.nav-pills a {
+		color:white; 
+	}
+	.glyphicon-chevron-down {
+		font-size: 7px;
+		padding-right: 10px;
+	}
+	.glyphicon-search {
+		font-size: 12px;
+	}
+	.dropdown:hover.dropdown-menu {
+		display: none;
+	}
