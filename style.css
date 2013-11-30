@@ -12,38 +12,47 @@
 	background: linear-gradient(135deg,  rgba(34,97,170,1) 1%,rgba(119,172,216,1) 73%,rgba(34,97,170,1) 99%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2261aa', endColorstr='#2261aa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-	p{
+.content{
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+}
+.mainmenu {
+	width: 300px;
+	margin: 150px auto;
+}
+	.mainitem {
+		border-radius: 5px;
 		text-align: center;
-		font-size: 32pt;
-		padding-top: 150px;
+		padding-bottom:15px;
+		margin-bottom: 15px;
 	}
-	.menu {
-		width: 960px;
-		position: relative;
-		margin: 0 auto;
-	}
-		.menu ul {
-			width: 150px;
-			background:url(menu.png);
-			border-radius: 15px;
-			margin: 20px auto;
+		.mainmenu a {
+			color:white;
+			text-decoration: none;
 		}
-			.menu li {
-				width: 150px;
-				text-align: center;
-				border-radius: 15px;
-				padding-top: 10px;
-				padding-bottom: 10px;
-			}
-			.menu li:hover {
-				background: -moz-linear-gradient(left,  rgba(30,87,153,0.4) 0%, rgba(31,88,154,0.4) 1%, rgba(125,185,232,0) 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(30,87,153,0.4)), color-stop(1%,rgba(31,88,154,0.4)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
-				background: -webkit-linear-gradient(left,  rgba(30,87,153,0.4) 0%,rgba(31,88,154,0.4) 1%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(left,  rgba(30,87,153,0.4) 0%,rgba(31,88,154,0.4) 1%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(left,  rgba(30,87,153,0.4) 0%,rgba(31,88,154,0.4) 1%,rgba(125,185,232,0) 100%); /* IE10+ */
-				background: linear-gradient(to right,  rgba(30,87,153,0.4) 0%,rgba(31,88,154,0.4) 1%,rgba(125,185,232,0) 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#661e5799', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
-			}
-			.menu a{
-				text-decoration: none;
-			}
+	.menu {
+		width:300px;
+		margin-top: 20px;
+		height: 40px;
+		border-radius: 6px;
+		overflow: hidden;
+		background: #c1c3c4;
+		transition: all 0.4s ease-in-out 0;
+	}
+	.menu:hover{
+		height: 230px;
+		background-color: #33566a;
+	}
+	.menu:hover .item a{
+		color:#5f86a1;
+	}
+	.menu:hover #i1 {
+		background-color: #8fc8d1;
+		margin:2px;
+		border-radius: 3px;
+	}
+		.item {
+			padding-bottom: 15px;
+			padding-top: 15px;
+		}
