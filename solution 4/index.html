@@ -3,24 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Modus Versus</title>
-	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="reset.css"> 
 	<link rel="stylesheet" href="..//dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="application/javascript" href="jquery-1.9.0.min.js">
-	<link rel="application/javascript" href="..//dist/js/bootstrap.min.js">
-	<link rel="application/javascript" href="script.js">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,800' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="..//dist/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
 	<header>
 		<div class="container">
 			<div class="row head">
-				<div class="col-xs-3 logo">
-					<span>MODUS</span>
-					versus
+				<div class="col-xs-2">
+					<a href="#" class="logo">
+						<span>MODUS</span>
+						versus
+					</a>
 				</div>
-				<div class="col-xs-9 menuheader">
+				<div class="col-xs-8 menuheader">
 					<ul class="nav nav-pills ">
-						<li>
+						<li class="active">
 							<a href="#">
 								HOME
 							</a>
@@ -39,12 +42,19 @@
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 								<span class="glyphicon glyphicon-chevron-down"></span>
 								PORTFOLIO
-								<ul class="dropdown-menu" role="menu">
-									<li><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-								</ul>
 							</a>
+							<div class="arrow"></div>
+							<ul class="dropdown-menu" role="menu" id="drop">
+									<li>
+										<a href="#">&rsaquo;  Portfolio 2 column page</a>
+									</li>
+									<li>
+										<a href="#">&rsaquo;  Portfolio 2 column page</a>
+									</li>
+									<li>
+										<a href="#">&rsaquo;  Portfolio 2 column page</a>
+									</li>
+								</ul>
 						</li>
 						<li>
 							<a href="#">
@@ -63,39 +73,180 @@
 						</li>
 						<li>
 							<a href="#" class="glyphicon glyphicon-search">
-			
 							</a>
 						</li>
 					</ul>
 				</div>
+				<div class="col-xs-2 search" id="sear">
+					<div class="input-group">
+					    <input type="text" class="form-control" placeholder="Search">
+					    <span class="input-group-btn">
+					    <button class="btn btn-default" type="button">Find</button>
+					    </span>
+					</div>
+				</div>
 			</div>
 		</div>	
 	</header>
-	<div class="container">
-		<div id="myCarousel" class="carousel slide" >
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  </ol>
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="img/2.jpg" alt="">
+	<div class="carousel">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				  </ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/2.jpg" alt="">
+						<div class="carousel-caption">
+							glhf
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/3.jpg" alt="">
+					</div>
 				</div>
-				<div class="item">
-					<img src="img/1.jpg" alt="">
+				<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			    	<span class="glyphicon glyphicon-chevron-left"></span>
+			 	</a>
+			  	<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			   		<span class="glyphicon glyphicon-chevron-right"></span>
+			  	</a>
+			</div>
+	</div>
+	<div class="content">
+		<div class="container namecont">
+			<div class="row rownamecont">
+				<div class="col-xs-9">
+					<span>Some of our top services</span>
+					<br>
+					Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. 
 				</div>
-				<div class="item">
-					<img src="img/3.jpg" alt="">
+				<div class="col-xs-3">
+					<button type="button" class="btn btn-info pull-right viewmore">VIEW MORE</button>
 				</div>
 			</div>
-			<a class="left carousel-control" href="#carousel-example-captions" data-slide="prev">
-		    	<span class="glyphicon glyphicon-chevron-left"></span>
-		 	</a>
-		  	<a class="right carousel-control" href="#carousel-example-captions" data-slide="next">
-		   		<span class="glyphicon glyphicon-chevron-right"></span>
-		  	</a>
+		</div>
+		<div class="container slidecont">
+			<div class="row">
+				<div class="col-sm-3 slideitem">
+					<div class="glyphicon glyphicon-thumbs-up" id="icon"></div> 
+					<br>
+					<span class="iconname">
+						SUSPENDISSE 
+					</span>
+					<br>
+					Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. 
+					<button type="button" class="btn btn-info pull-right readmore">read more</button>
+				</div>
+				<div class="col-sm-3 slideitem">
+					<div class="glyphicon glyphicon-wrench" id="icon"></div>
+					<br>
+					<span class="iconname">
+						MAECENAS 
+					</span>
+					<br>
+					Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+					<button type="button" class="btn btn-info pull-right readmore">read more</button>
+				</div>
+				<div class="col-sm-3 slideitem">
+					<div class="glyphicon glyphicon-flag" id="icon"></div>
+					<br>
+					<span class="iconname">
+						ALIQUAM  
+					</span>
+					<br>
+					Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. 
+					<button type="button" class="btn btn-info pull-right readmore">read more</button>
+				</div>
+				<div class="col-sm-3 slideitem">
+					<div class="glyphicon glyphicon-glass" id="icon"></div>
+					<br>
+					<span class="iconname">
+						HABITASSE  
+					</span>
+					<br>
+					Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. 
+					<button type="button" class="btn btn-info pull-right readmore">read more</button>
+				</div>
 			</div>
+		</div>
+	</div>
+	<div class="contentbot">
+		<div class="colorblock">
+		<div class="container">
+			<div class="row contentbottext">
+				<span>
+					WHY MODUS VERSUS?
+				</span>
+				<br>
+				Capacitance cascading integer reflective interface data development high bus cache dithering transponder.  
+			</div>
+			<div class="row">
+				<ul class="menuimg">
+					<li>
+						<div class="border">
+							<div class="elipse"></div>
+							<div class="elipse"></div>
+							<div class="elipse"></div>
+							<div class="oval"></div>
+							<div class="img">
+							<img src="img/3.jpg" alt="">
+						</div>
+					</div>
+					</li>
+					<li>
+						<div class="border">
+							<div class="elipse"></div>
+							<div class="elipse"></div>
+							<div class="elipse"></div>
+							<div class="oval"></div>
+							<div class="img">
+							<img src="img/4.jpg" alt="">
+						</div>
+					</div>
+					</li>
+					<li>
+						<div class="border">
+							<div class="elipse"></div>
+							<div class="elipse"></div>
+							<div class="elipse"></div>
+							<div class="oval"></div>
+							<div class="img">
+							<img src="img/5.jpg" alt="">
+						</div>
+					</div>
+					</li>
+				</ul>
+<!-- 				<div class="col-xs-4 border">
+					<div class="elipse"></div>
+					<div class="elipse"></div>
+					<div class="elipse"></div>
+					<div class="oval"></div>
+					<div class="img">
+						<img src="img/3.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-xs-4 border">
+					<div class="elipse"></div>
+					<div class="elipse"></div>
+					<div class="elipse"></div>
+					<div class="oval"></div>
+					<div class="img">
+						<img src="img/4.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-xs-4 border">
+					<div class="elipse"></div>
+					<div class="elipse"></div>
+					<div class="elipse"></div>
+					<div class="oval"></div>
+					<div class="img">
+						<img src="img/5.jpg" alt="">
+					</div>
+				</div> -->
+			</div>
+		</div>
+		</div>
 	</div>
 </body>
 </html>
