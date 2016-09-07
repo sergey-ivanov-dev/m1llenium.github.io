@@ -38,7 +38,7 @@
 		border-radius: 6px;
 		overflow: hidden;
 		background: #c1c3c4;
-		transition: all 0.4s ease-in-out 0;
+		transition: all 0.4s ease-in-out 0s;
 	}
 	.menu:hover{
 		height: 230px;
